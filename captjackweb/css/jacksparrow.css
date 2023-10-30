@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(97, 28, 28);
+color: blanchedalmond;
+}
+
+
+div{
+  
+  padding-top:0px;
+}
+
+h1 {
+  color: blanchedalmond;
+  text-align: center;
+/* border: ; */
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 65px;
+padding: 10%;
+border-color: rgb(0, 0, 0);
+border: 0px;
+
+background-color: rgb(37, 11, 11);
+
+}
+
+h2{ 
+  color: blanchedalmond;
+  
+background-color: rgb(37, 4, 11);
+
+
+}
+
+
+
+p {
+  font-family: verdana;
+  font-size: 19px;
+  /* text-align: left; */
+ color: blanchedalmond;
+  /* font-display: ; */
+padding-bottom: 200px;
+/* margin-right: 25%; */
+
+
+}
+
+
+/***********************nav bar****************/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  rgb(37, 11, 11);
+}
+
+nav li {
+  float: left;
+
+
+}
+
+nav li a {
+  display: block;
+  padding: 20px;
+  /* font: ;*/
+  color: blanchedalmond
+
+
+  
+} 
+
+/*hover state for the nav buttons*/
+/*pseudo-class for hovering*/
+nav li a:hover{
+  background-color: rgb(143, 31, 31);
+} 
+
+
+/*********************sections*******************/
+
+section {
+  background-color: #00000033;
+  /*no pixel amount - use percent or vw - viewport width*/
+  width: 60vw;
+  /*center the sections but top & bottom pacing is none*/
+  /*top, bottom - left and right*/
+  margin: 0 auto;
+  /*adds space inside the sections*/
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+footer { 
+  text-align: center;
+  background-color: rgb(68, 21, 21);
+padding-left: 20px;
+padding-top: 30px;
+
+}
+
+
+
