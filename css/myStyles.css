@@ -1,0 +1,42 @@
+#masthead {
+    background-image: url(../images/backgrounds/mountains.jpg);
+
+background-size: cover
+
+}
+#Interests {
+    background-color: rgb(0, 0, 0); 
+    
+}
+
+.bg-darkgrey {
+    background-color: #707070;
+}
+
+
+.bg-scallop{
+    background-image: url("../images/backgrounds/");
+background-repeat: repeat-x;
+background-color: #353535;
+}
+
+
+nav li{ 
+    padding: 0px 50px;
+
+
+}
+
+section{ background-color: #d1d1d1;}
+
+.interests-content {
+    padding: 30px;
+}
+
+.skiing-image {
+    margin-left: 20px;
+}
+
+.skiing-text {
+    padding: 10px;
+}
