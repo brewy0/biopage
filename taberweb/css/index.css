@@ -1,0 +1,298 @@
+
+
+
+
+header {
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px; /* Adjust the font size as needed */
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Hide images in the header on smaller devices */
+@media (max-width: 768px) {
+    header .col-sm-2 img {
+        display: none;
+    }
+
+    header .col-sm-8 {
+        flex: 1; /* Take up the available space */
+        text-align: center; /* Center the text in the center column */
+    }
+
+    header h1 {
+        white-space: normal; /* Allow text to wrap */
+    }
+}
+
+    
+/* Hide images in the header on smaller devices */
+@media (max-width: 1200px) {
+    header .col-sm-2 img {
+        display: none;
+    }
+}
+
+h2 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: black;
+font-size: 56px;
+
+
+}
+
+
+
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    margin: 0; /* Remove the default margin */
+    padding: 10px; /* Add padding to the h3 element */
+    background: linear-gradient(to bottom, #567c5f, rgba(255, 255, 255, 0)); /* Add gradient background */
+}
+
+.col-sm-8 h1 {
+    margin-top: 50px; /* Adjust the value as needed */
+}
+
+
+
+
+
+
+
+/* Add some margin to the left logo */
+.col-sm-2.left-logo {
+    margin-right: 100%; /* You can adjust the value to increase or decrease the space */
+}
+
+/* Add some margin to the right logo */
+.col-sm-2.right-logo {
+    margin-left: 100px; /* You can adjust the value to increase or decrease the space */
+}
+
+
+
+
+
+/* Style for the green transparent gradient bar background in the Upcoming Events section */
+#myCarousel + h2 {
+    text-align: center;
+    margin-top: 0px; /* Adjust the value as needed to move it down */
+    background: linear-gradient(to bottom, #000000, rgba(255, 255, 255, 0)); /* Green to transparent gradient */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 25px; /* Adjust the padding as needed */
+}
+
+/* Additional styles to ensure the navigation bar is not affected */
+.navbar {
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    position: relative; /* Ensure proper stacking of elements */
+}
+
+
+
+.carousel-inner img {
+    object-fit: cover; /* Ensure images cover the entire carousel item */
+    height: 800px; /* Make the images fill the fixed height of the carousel */
+    max-width: 100%; /* Ensure images don't grow too large on smaller screens */
+}
+
+.event-box {
+    border: 1px solid #000000;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.bg-purple{
+    background-color: rgb(74, 104, 92)
+}
+
+.nav-link {
+    color: rgb(248, 254, 171) !important;
+    margin-right: 75px; /* Adjust the value as needed to increase the space between words */
+}
+.navbar-brand{
+    color:rgb(255, 163, 142) !important;
+}
+
+
+
+
+
+
+
+
+
+/* Style for the container around "Upcoming Events" text */
+/* Style for the "Upcoming Events" heading */
+.gradient-container h2 {
+    margin: 0;
+    font-size: 28px; /* Set the desired font size */
+    color: black; /* Change the color to black */
+    border: 2px solid rgb(255, 163, 142); /* Add border around the heading */
+    padding: 10px; /* Add padding to the heading */
+}
+
+/* Style for the container around "Upcoming Events" text */
+.upcoming-events-container {
+    position: relative;
+    display: flex;
+    font-size: 44px; /* Set the font size to match "About Our Community" */
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    border: 2px solid rgb(255, 163, 142); /* Use the color of text in the nav bar */
+    padding: 20px; /* Add padding to the container */
+    color: black; /* Set the text color to black */
+}
+
+/* Style for the "Upcoming Events" heading */
+.gradient-container h2 {
+    margin: 0;
+    font-size: 44px; /* Set the font size to match "About Our Community" */
+    color: black; /* Change the color to black */
+    border: 2px solid rgb(255, 163, 142); /* Add border around the heading */
+    padding: 10px; /* Add padding to the heading */
+}
+.event-heading {
+    font-size: 6px; /* Set the desired font size */
+    color: rgb(0, 0, 0); /* Use the color of the "ab" text in the nav bar */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Style for the corn image on the left */
+.corn-image, .wheat-image {
+    max-width: 100px; /* Adjust the size as needed */
+}
+
+/* Style for the box around the corn and wheat images */
+.corn-image, .wheat-image {
+    border: px solid rgb(248, 254, 171); /* Use the color of text in the nav bar */
+    padding: 10px; /* Add padding to the images */
+    margin: 0 10px; /* Adjust the margin between images */
+}
+
+
+.event-box {
+    border: 0px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    background: linear-gradient(to bottom, #5b9b6b, rgba(255, 255, 255, 0)); /* Green to transparent gradient */
+}
+
+/* Add some margin to the top of the event boxes */
+.event-box:first-child {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+/* Style for the corn image on the left */
+.corn-image {
+    max-width: 100px; /* Adjust the size as needed */
+}
+
+/* Style for the wheat image on the right */
+.wheat-image {
+    max-width: 100px; /* Adjust the size as needed */
+}
+
+
+
+
+
+section h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black; /* Change the color to black */
+    font-size: 44px;
+    
+}
+
+/* Add border to the "About Our Community" heading */
+.section-heading-border {
+    border: 2px solid rgb(255, 163, 142);
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjust the value to control the space below the heading */
+}
+
+
+
+
+/* Style for the container around "About Our Community" text */
+.about-text-container {
+    background: linear-gradient(to bottom, #4f7b5a, rgba(255, 255, 255, 0)); /* Green to transparent gradient */
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 50px; /* Adjust the margin as needed */
+    border-radius: 0px; /* Add border-radius for rounded corners */
+}
+
+/* Style for the text under "About Our Community" */
+.about-text p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black; /* Change the color to black */
+    font-size: 18px; /* Set the desired font size */
+    margin-bottom: 15px; /* Adjust the margin between paragraphs */
+}
+
+
+
+
+
+
+
+
+.footer-copyright {
+    color: rgb(248, 254, 171); /* Use the color of text in the nav bar */
+}
+
+/* Style for the "Made by" text in the footer */
+.footer-made-by {
+    color: rgb(248, 254, 171); /* Use the color of text in the nav bar */
+}
+
+
+
+
+
+
+
+footer a, footer a:visited{
+    color: rgb(202, 163, 37);
+}

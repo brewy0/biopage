@@ -1,0 +1,65 @@
+/* Your existing CSS styles */
+
+/* Update the header styles */
+header {
+    background-color: #f8f9fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; /* Set header height to full viewport height */
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 55px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Add this style to ensure centering */
+header.bg-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the left and right logos */
+header .col-sm-2 img {
+    max-width: 100%;
+}
+
+/* Hide images in the header on smaller devices */
+@media (max-width: 768px) {
+    header .col-sm-2 img {
+        display: none;
+    }
+
+    header .col-sm-8 {
+        flex: 1;
+        text-align: center;
+    }
+
+    header h1 {
+        white-space: normal;
+    }
+}
+
+/* Hide images in the header on smaller devices */
+@media (max-width: 1200px) {
+    header .col-sm-2 img {
+        display: none;
+    }
+}
+
+h2,
+h3,
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
