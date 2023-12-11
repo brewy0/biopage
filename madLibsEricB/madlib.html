@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content here -->
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0; background-image: url('images/backgroundred.jpg'); background-size: cover; background-position: center bottom; background-repeat: no-repeat;">
+
+    <!-- Image Above H1 -->
+    <div class="container text-center mt-2">
+        <img src="images/poeplestanding.png" alt="Your Image" class="img-fluid" style="width: 50%; margin-bottom: -75px; margin-top: -100px;">
+    </div>
+
+    <!-- Header -->
+    <header class="text-center mt-4">
+        <h1>Adventure Starts Here</h1>
+    </header>
+
+    <!-- Intro Text -->
+    <div class="container mt-2 text-center" style="background: rgba(0, 0, 0, 0.7); padding: 55px; border-radius: 10px; margin-top: -50px;">
+        <p style="color: #be7c7c; font-size: 24px;">Fill in the blanks to create your own unique adventure!</p>
+
+        <form>
+            <p>In a small town, a group of <input type="text" id="group"> decided to embark on an adventure. They were <input type="text" id="adjective"> about the prospect of <input type="text" id="verb"> through the eerie streets on this <input type="text" id="adjective2"> night.
+                Their journey began when they stumbled upon an <input type="text" id="noun">, covered in <input type="text" id="adjective3">. Inside, they found a box with mysterious <input type="text" id="noun2"> in it. The group couldn't resist taking these <input type="text" id="plural_noun"> and decided to use them in their adventure.
+                As they continued down the winding, narrow streets, they encountered <input type="text" id="adjective4"> figures lurking in the shadows. The <input type="text" id="plural_noun2"> seemed to follow them, and the group's spines tingled with fear.
+                To escape the <input type="text" id="noun3">, they turned into a <input type="text" id="animal">. There, they discovered a hidden <input type="text" id="noun4"> adorned with <input type="text" id="adjective5"> lights. They decided to go through the <input type="text" id="noun5"> and see where it would lead.
+                Inside the <input type="text" id="place">, they stumbled upon a world filled with <input type="text" id="plural_noun3"> of all shapes and sizes. The group couldn't believe their eyes! They joined in with the <input type="text" id="plural_noun4"> and had the time of their lives.
+                As the adventure ended, they realized it was time to go home. They left the <input type="text" id="noun6"> behind and emerged back into the <input type="text" id="place2">. The <input type="text" id="adjective6"> adventure had come to an end, leaving them with <input type="text" id="emotion"> full of moments they would cherish forever.
+            </p>
+
+            <!-- Button to trigger story generation -->
+            <button type="button" onclick="generateStory()" class="btn btn-dark btn-lg mt-3 mb-4">Generate Story</button>
+        </form>
+    </div>
+
+    <!-- Image woodletters1.png -->
+    <div class="container text-center mb-5">
+        <img src="images/woodletters1.png" alt="Your Image" class="img-fluid" style="width: 25%;">
+    </div>
+
+    <!-- Display generated story -->
+    <div class="container text-center mb-5" id="storyDisplay"></div>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5 text-center mt-auto" style="width: 100%; position: fixed; bottom: 0; left: 0; right: 0;">
+        <div class="container">
+            <!-- Copyright text in the footer -->
+            <div class="text-light">
+                <p>&copy; 2023 MadlibEB. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript function to generate story -->
+    <script src="madlib.js"></script>
+</body>
+</html>
