@@ -1,36 +1,60 @@
-function generateStory() {
-    // Get user input
-    var group = document.getElementById('group').value;
-    var verb = document.getElementById('verb').value;
-    var adjective = document.getElementById('adjective').value;
-    var adjective2 = document.getElementById('adjective2').value;
-    var noun = document.getElementById('noun').value;
-    var adjective3 = document.getElementById('adjective3').value;
-    var noun2 = document.getElementById('noun2').value;
-    var plural_noun = document.getElementById('plural_noun').value;
-    var adjective4 = document.getElementById('adjective4').value;
-    var plural_noun2 = document.getElementById('plural_noun2').value;
-    var noun3 = document.getElementById('noun3').value;
-    var animal = document.getElementById('animal').value;
-    var noun4 = document.getElementById('noun4').value;
-    var adjective5 = document.getElementById('adjective5').value;
-    var noun5 = document.getElementById('noun5').value;
-    var place = document.getElementById('place').value;
-    var plural_noun3 = document.getElementById('plural_noun3').value;
-    var plural_noun4 = document.getElementById('plural_noun4').value;
-    var noun6 = document.getElementById('noun6').value;
-    var place2 = document.getElementById('place2').value;
-    var adjective6 = document.getElementById('adjective6').value;
-    var emotion = document.getElementById('emotion').value;
+// Variable to track whether a story is already displayed
+var storyDisplayed = false;
 
-    // Create the story with user input
-    var adventureStory = `In a small town, a group of ${group} decided to embark on an adventure. They were ${verb} about the prospect of ${verb} through the eerie streets on this ${adjective2} night.
-    Their journey began when they stumbled upon an ${noun}, covered in ${adjective3}. Inside, they found a box with mysterious ${noun2} in it. The group couldn't resist taking these ${plural_noun} and decided to use them in their adventure.
-    As they continued down the winding, narrow streets, they encountered ${adjective4} figures lurking in the shadows. The ${plural_noun2} seemed to follow them, and the group's spines tingled with fear.
-    To escape the ${noun3}, they turned into a ${animal}. There, they discovered a hidden ${noun4} adorned with ${adjective5} lights. They decided to go through the ${noun5} and see where it would lead.
-    Inside the ${place}, they stumbled upon a world filled with ${plural_noun3} of all shapes and sizes. The group couldn't believe their eyes! They joined in with the ${plural_noun4} and had the time of their lives.
-    As the adventure ended, they realized it was time to go home. They left the ${noun6} behind and emerged back into the ${place2}. The ${adjective6} adventure had come to an end, leaving them with ${emotion} full of moments they would cherish forever.`;
+function generateStory() {
+    // Check if a story is already displayed
+    if (storyDisplayed) {
+        alert("Please clear the current story before generating a new one.");
+        return;
+    }
+
+ 
+    var madlibGroup = document.getElementById('madlib-group').value;
+    var madlibAdjective1 = document.getElementById('madlib-adjective1').value;
+    var madlibVerb = document.getElementById('madlib-verb').value;
+    var madlibAdjective2 = document.getElementById('madlib-adjective2').value;
+    var madlibNoun1 = document.getElementById('madlib-noun1').value;
+    var madlibAdjective3 = document.getElementById('madlib-adjective3').value;
+    var madlibNoun = document.getElementById('madlib-noun').value;
+    var madlibPluralNoun = document.getElementById('madlib-plural-noun').value;
+    var madlibAdjective4 = document.getElementById('madlib-adjective4').value;
+    var madlibPluralNoun2 = document.getElementById('madlib-plural-noun2').value;
+    var madlibNoun3 = document.getElementById('madlib-noun3').value;
+    var madlibAnimal = document.getElementById('madlib-animal').value;
+    var madlibNoun4 = document.getElementById('madlib-noun4').value;
+    var madlibAdjective5 = document.getElementById('madlib-adjective5').value;
+    var madlibNoun5 = document.getElementById('madlib-noun5').value;
+    var madlibPlace = document.getElementById('madlib-place').value;
+    var madlibPluralNoun3 = document.getElementById('madlib-plural-noun3').value;
+    var madlibPluralNoun4 = document.getElementById('madlib-plural-noun4').value;
+    var madlibNoun6 = document.getElementById('madlib-noun6').value;
+    var madlibPlace2 = document.getElementById('madlib-place2').value;
+    var madlibAdjective6 = document.getElementById('madlib-adjective6').value;
+    var madlibEmotion = document.getElementById('madlib-emotion').value;
+
+
+    var adventureStory = `In a small town, a group of ${madlibGroup} decided to embark on an adventure. They were ${madlibVerb} about the prospect of ${madlibVerb} through the eerie streets on this ${madlibAdjective2} night.
+        Their journey began when they stumbled upon an ${madlibNoun1}, covered in ${madlibAdjective3}. Inside, they found a box with mysterious ${madlibNoun} in it. The group couldn't resist taking these ${madlibPluralNoun} and decided to use them in their adventure.
+        As they continued down the winding, narrow streets, they encountered ${madlibAdjective4} figures lurking in the shadows. The ${madlibPluralNoun2} seemed to follow them, and the group's spines tingled with fear.
+        To escape the ${madlibNoun3}, they turned into a ${madlibAnimal}. There, they discovered a hidden ${madlibNoun4} adorned with ${madlibAdjective5} lights. They decided to go through the ${madlibNoun5} and see where it would lead.
+        Inside the ${madlibPlace}, they stumbled upon a world filled with ${madlibPluralNoun3} of all shapes and sizes. The group couldn't believe their eyes! They joined in with the ${madlibPluralNoun4} and had the time of their lives.
+        As the adventure ended, they realized it was time to go home. They left the ${madlibNoun6} behind and emerged back into the ${madlibPlace2}. The ${madlibAdjective6} adventure had come to an end, leaving them with ${madlibEmotion} full of moments they would cherish forever.`;
 
     // Display the generated story
-    document.getElementById('storyDisplay').innerHTML = '<p>' + adventureStory + '</p>';
+    var generatedStoryElement = document.getElementById('storyDisplay');
+    generatedStoryElement.innerHTML = `<p>${adventureStory}</p>`;
+
+  
+    storyDisplayed = true;
+}
+
+function clearForm() {
+  
+    var inputFields = document.querySelectorAll('input[type="text"]');
+    inputFields.forEach(function (input) {
+        input.value = '';
+    });
+
+
+    storyDisplayed = false;
 }

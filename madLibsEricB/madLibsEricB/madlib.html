@@ -30,42 +30,64 @@
     </header>
 
     <!-- Intro Text -->
-    <div class="container mt-2 text-center" style="background: rgba(0, 0, 0, 0.7); padding: 55px; border-radius: 10px; margin-top: -50px;">
-        <p style="color: #be7c7c; font-size: 24px;">Fill in the blanks to create your own unique adventure!</p>
+    <div class="container mt-2 text-center" style="background: rgb(201, 168, 168); padding: 55px; border-radius: 10px; margin-top: -50px;">
+        <p style="color: #000000; font-size: 24px;">Fill in the blanks to create your own unique adventure!</p>
+    
 
         <form>
-            <p>In a small town, a group of <input type="text" id="noun"> decided to embark on an adventure. They were <input type="text" id="adjective"> about the prospect of <input type="text" id="verb"> through the eerie streets on this <input type="text" id="adjective2"> night.
-                Their journey began when they stumbled upon an <input type="text" id="noun1">, covered in <input type="text" id="adjective3">. Inside, they found a box with mysterious <input type="text" id="noun2"> in it. The group couldn't resist taking these <input type="text" id="plural_noun"> and decided to use them in their adventure.
-                As they continued down the winding, narrow streets, they encountered <input type="text" id="adjective4"> figures lurking in the shadows. The <input type="text" id="plural_noun2"> seemed to follow them, and the group's spines tingled with fear.
-                To escape the <input type="text" id="noun3">, they turned into a <input type="text" id="animal">. There, they discovered a hidden <input type="text" id="noun4"> adorned with <input type="text" id="adjective5"> lights. They decided to go through the <input type="text" id="noun5"> and see where it would lead.
-                Inside the <input type="text" id="place">, they stumbled upon a world filled with <input type="text" id="plural_noun3"> of all shapes and sizes. The group couldn't believe their eyes! They joined in with the <input type="text" id="plural_noun4"> and had the time of their lives.
-                As the adventure ended, they realized it was time to go home. They left the <input type="text" id="noun6"> behind and emerged back into the <input type="text" id="place2">. The <input type="text" id="adjective6"> adventure had come to an end, leaving them with <input type="text" id="emotion"> full of moments they would cherish forever.
+            <p>In a small town, a group of <input type="text" id="madlib-group" placeholder="Group"> decided to embark on an adventure. They were <input type="text" id="madlib-adjective1" placeholder="Adjective 1"> about the prospect of <input type="text" id="madlib-verb" placeholder="Verb"> through the eerie streets on this <input type="text" id="madlib-adjective2" placeholder="Adjective 2"> night.
+                Their journey began when they stumbled upon an <input type="text" id="madlib-noun1" placeholder="Noun 1">, covered in <input type="text" id="madlib-adjective3" placeholder="Adjective 3">. Inside, they found a box with mysterious <input type="text" id="madlib-noun" placeholder="Noun"> in it. The group couldn't resist taking these <input type="text" id="madlib-plural-noun" placeholder="Plural Noun"> and decided to use them in their adventure.
+                As they continued down the winding, narrow streets, they encountered <input type="text" id="madlib-adjective4" placeholder="Adjective 4"> figures lurking in the shadows. The <input type="text" id="madlib-plural-noun2" placeholder="Plural Noun 2"> seemed to follow them, and the group's spines tingled with fear.
+                To escape the <input type="text" id="madlib-noun3" placeholder="Noun 3">, they turned into a <input type="text" id="madlib-animal" placeholder="Animal">. There, they discovered a hidden <input type="text" id="madlib-noun4" placeholder="Noun 4"> adorned with <input type="text" id="madlib-adjective5" placeholder="Adjective 5"> lights. They decided to go through the <input type="text" id="madlib-noun5" placeholder="Noun 5"> and see where it would lead.
+                Inside the <input type="text" id="madlib-place" placeholder="Place">, they stumbled upon a world filled with <input type="text" id="madlib-plural-noun3" placeholder="Plural Noun 3"> of all shapes and sizes. The group couldn't believe their eyes! They joined in with the <input type="text" id="madlib-plural-noun4" placeholder="Plural Noun 4"> and had the time of their lives.
+                As the adventure ended, they realized it was time to go home. They left the <input type="text" id="madlib-noun6" placeholder="Noun 6"> behind and emerged back into the <input type="text" id="madlib-place2" placeholder="Place 2">. The <input type="text" id="madlib-adjective6" placeholder="Adjective 6"> adventure had come to an end, leaving them with <input type="text" id="madlib-emotion" placeholder="Emotion"> full of moments they would cherish forever.
             </p>
 
-            <!-- Button to trigger story generation -->
+           <!-- Button to trigger story generation -->
             <button type="button" onclick="generateStory()" class="btn btn-dark btn-lg mt-3 mb-4">Generate Story</button>
+
+            <!-- Button to clear the form -->
+            <button type="button" onclick="clearForm()" class="btn btn-dark btn-lg mt-3 mb-4">Clear Form</button>
+
         </form>
     </div>
 
-    <!-- Image woodletters1.png -->
-    <div class="container text-center mb-5">
-        <img src="images/woodletters1.png" alt="Your Image" class="img-fluid" style="width: 25%;">
-    </div>
+   
 
     <!-- Display generated story -->
-    <div class="container text-center mb-5" id="storyDisplay"></div>
+    <div class="container text-center mb-5" id="storyDisplay" style="background: rgb(201, 168, 168); padding: 15px; border-radius: 10px;">    <p style="color: #000000; font-size: 24px;">The Spooky Night</p></div>
 
-    <!-- Footer -->
-    <footer class="bg-dark py-5 text-center mt-auto" style="width: 100%; position: fixed; bottom: 0; left: 0; right: 0;">
-        <div class="container">
-            <!-- Copyright text in the footer -->
-            <div class="text-light">
-                <p>&copy; 2023 MadlibEB. All rights reserved.</p>
-            </div>
+
+
+     <!-- Image woodletters1.png -->
+    <div class="container text-center mb-5">
+        <img src="images/smileyface2.png" alt="Your Image" class="img-fluid" style="width: 25%;">
+    </div>
+
+
+
+
+    <header class="text-center mt-4">
+        <h1>You Did It!</h1>
+    </header>
+
+<!-- Footer -->
+<footer class="btn-dark py-5 text-center mt-auto" style="width: 100%; position: fixed; bottom: 0; left: 0; right: 0;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Copyright text in the footer -->
+        <div class="text-light">
+            <p>&copy; 2023</p>
         </div>
-    </footer>
+        <div class="text-light">
+            <p>MadlibEB</p>
+        </div>
+        <div class="text-light">
+            <p>All rights reserved</p>
+        </div>
+    </div>
+</footer>
 
     <!-- JavaScript function to generate story -->
     <script src="madlib.js"></script>
-</body>
+</body> 
 </html>
